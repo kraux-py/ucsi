@@ -11,149 +11,151 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
-		<script src="https://unpkg.com/unlazy@0.11.3/dist/unlazy.with-hashing.iife.js" defer init></script>
-		<script type="text/javascript">
-			window.tailwind.config = {
-				darkMode: ['class'],
-				theme: {
-					extend: {
-						colors: {
-							border: 'hsl(var(--border))',
-							input: 'hsl(var(--input))',
-							ring: 'hsl(var(--ring))',
-							background: 'hsl(var(--background))',
-							foreground: 'hsl(var(--foreground))',
-							primary: {
-								DEFAULT: 'hsl(var(--primary))',
-								foreground: 'hsl(var(--primary-foreground))'
-							},
-							secondary: {
-								DEFAULT: 'hsl(var(--secondary))',
-								foreground: 'hsl(var(--secondary-foreground))'
-							},
-							destructive: {
-								DEFAULT: 'hsl(var(--destructive))',
-								foreground: 'hsl(var(--destructive-foreground))'
-							},
-							muted: {
-								DEFAULT: 'hsl(var(--muted))',
-								foreground: 'hsl(var(--muted-foreground))'
-							},
-							accent: {
-								DEFAULT: 'hsl(var(--accent))',
-								foreground: 'hsl(var(--accent-foreground))'
-							},
-							popover: {
-								DEFAULT: 'hsl(var(--popover))',
-								foreground: 'hsl(var(--popover-foreground))'
-							},
-							card: {
-								DEFAULT: 'hsl(var(--card))',
-								foreground: 'hsl(var(--card-foreground))'
-							},
-						},
-					}
-				}
-			}
-		</script>
-		<style type="text/tailwindcss">
-			@layer base {
-				:root {
-					--background: 0 0% 100%;
---foreground: 240 10% 3.9%;
---card: 0 0% 100%;
---card-foreground: 240 10% 3.9%;
---popover: 0 0% 100%;
---popover-foreground: 240 10% 3.9%;
---primary: 240 5.9% 10%;
---primary-foreground: 0 0% 98%;
---secondary: 240 4.8% 95.9%;
---secondary-foreground: 240 5.9% 10%;
---muted: 240 4.8% 95.9%;
---muted-foreground: 240 3.8% 46.1%;
---accent: 240 4.8% 95.9%;
---accent-foreground: 240 5.9% 10%;
---destructive: 0 84.2% 60.2%;
---destructive-foreground: 0 0% 98%;
---border: 240 5.9% 90%;
---input: 240 5.9% 90%;
---ring: 240 5.9% 10%;
---radius: 0.5rem;
-				}
-				.dark {
-					--background: 240 10% 3.9%;
---foreground: 0 0% 98%;
---card: 240 10% 3.9%;
---card-foreground: 0 0% 98%;
---popover: 240 10% 3.9%;
---popover-foreground: 0 0% 98%;
---primary: 0 0% 98%;
---primary-foreground: 240 5.9% 10%;
---secondary: 240 3.7% 15.9%;
---secondary-foreground: 0 0% 98%;
---muted: 240 3.7% 15.9%;
---muted-foreground: 240 5% 64.9%;
---accent: 240 3.7% 15.9%;
---accent-foreground: 0 0% 98%;
---destructive: 0 62.8% 30.6%;
---destructive-foreground: 0 0% 98%;
---border: 240 3.7% 15.9%;
---input: 240 3.7% 15.9%;
---ring: 240 4.9% 83.9%;
-				}
-			}
-		</style>
+    <script src="https://unpkg.com/unlazy@0.11.3/dist/unlazy.with-hashing.iife.js" defer init></script>
+    <script type="text/javascript">
+      window.tailwind.config = {
+        darkMode: ['class'],
+        theme: {
+          extend: {
+            colors: {
+              border: 'hsl(var(--border))',
+              input: 'hsl(var(--input))',
+              ring: 'hsl(var(--ring))',
+              background: 'hsl(var(--background))',
+              foreground: 'hsl(var(--foreground))',
+              primary: {
+                DEFAULT: 'hsl(var(--primary))',
+                foreground: 'hsl(var(--primary-foreground))'
+              },
+              secondary: {
+                DEFAULT: 'hsl(var(--secondary))',
+                foreground: 'hsl(var(--secondary-foreground))'
+              },
+              destructive: {
+                DEFAULT: 'hsl(var(--destructive))',
+                foreground: 'hsl(var(--destructive-foreground))'
+              },
+              muted: {
+                DEFAULT: 'hsl(var(--muted))',
+                foreground: 'hsl(var(--muted-foreground))'
+              },
+              accent: {
+                DEFAULT: 'hsl(var(--accent))',
+                foreground: 'hsl(var(--accent-foreground))'
+              },
+              popover: {
+                DEFAULT: 'hsl(var(--popover))',
+                foreground: 'hsl(var(--popover-foreground))'
+              },
+              card: {
+                DEFAULT: 'hsl(var(--card))',
+                foreground: 'hsl(var(--card-foreground))'
+              },
+            },
+          }
+        }
+      }
+    </script>
+    <style type="text/tailwindcss">
+      @layer base {
+        :root {
+          --background: 0 0% 100%;
+          --foreground: 240 10% 3.9%;
+          --card: 0 0% 100%;
+          --card-foreground: 240 10% 3.9%;
+          --popover: 0 0% 100%;
+          --popover-foreground: 240 10% 3.9%;
+          --primary: 240 5.9% 10%;
+          --primary-foreground: 0 0% 98%;
+          --secondary: 240 4.8% 95.9%;
+          --secondary-foreground: 240 5.9% 10%;
+          --muted: 240 4.8% 95.9%;
+          --muted-foreground: 240 3.8% 46.1%;
+          --accent: 240 4.8% 95.9%;
+          --accent-foreground: 240 5.9% 10%;
+          --destructive: 0 84.2% 60.2%;
+          --destructive-foreground: 0 0% 98%;
+          --border: 240 5.9% 90%;
+          --input: 240 5.9% 90%;
+          --ring: 240 5.9% 10%;
+          --radius: 0.5rem;
+        }
+        .dark {
+          --background: 240 10% 3.9%;
+          --foreground: 0 0% 98%;
+          --card: 240 10% 3.9%;
+          --card-foreground: 0 0% 98%;
+          --popover: 240 10% 3.9%;
+          --popover-foreground: 0 0% 98%;
+          --primary: 0 0% 98%;
+          --primary-foreground: 240 5.9% 10%;
+          --secondary: 240 3.7% 15.9%;
+          --secondary-foreground: 0 0% 98%;
+          --muted: 240 3.7% 15.9%;
+          --muted-foreground: 240 5% 64.9%;
+          --accent: 240 3.7% 15.9%;
+          --accent-foreground: 0 0% 98%;
+          --destructive: 0 62.8% 30.6%;
+          --destructive-foreground: 0 0% 98%;
+          --border: 240 3.7% 15.9%;
+          --input: 240 3.7% 15.9%;
+          --ring: 240 4.9% 83.9%;
+        }
+      }
+    </style>
   </head>
   <body>
     <div class="bg-background p-6">
-    <h1 class="text-5xl font-bold text-primary mb-4 text-center">UNIVERSIDAD CATOLICA</h1>
-    <h2 class="text-3xl font-semibold text-primary mb-2 text-center">PARTIDOS DEL DIA</h2>
-    <p class="text-lg text-muted-foreground mb-6 text-center">FIXTURE 19/09 - 17:00HS</p>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <h1 class="text-5xl font-bold text-primary mb-4 text-center">UNIVERSIDAD CATÓLICA</h1>
+      <h2 class="text-3xl font-semibold text-primary mb-2 text-center">PARTIDOS UCSI</h2>
+      <p class="text-lg text-muted-foreground mb-6 text-center">EL DIA FINAL</p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- Volley -->
         <div class="bg-gradient-to-r from-blue-400 to-blue-600 p-4 rounded-lg shadow-lg transition-transform transform hover:scale-105">
-            <h3 class="text-xl font-bold text-white">VOLLEY MASC</h3>
-            <p class="text-lg text-white">UCSI vs UTCD</p>
-            <p class="text-xs text-white">24 de Junio</p>
-			<p class="text-xs text-white">1er PARTIDO</p>
+          <h3 class="text-xl font-bold text-white">VOLLEY FEMENINO</h3>
+          <p class="text-lg text-white">🏆 FINAL</p>
+          <p class="text-lg text-white">📌 UTCD 🆚 UCSI</p>
+        </div>
+        <!-- Handball -->
+        <div class="bg-blue-500 p-4 rounded-lg shadow-lg transition-transform transform hover:scale-105">
+          <h3 class="text-xl font-bold text-white">HANDBALL MASCULINO</h3>
+          <p class="text-lg text-white">🏆 SEMIFINAL</p>
+          <p class="text-lg text-white">📌 UHG 🆚 UCSI</p>
+        </div>
+        <!-- Futsal -->
+        <div class="bg-blue-500 p-4 rounded-lg shadow-lg transition-transform transform hover:scale-105">
+          <h3 class="text-xl font-bold text-white">FUTSAL MASCULINO</h3>
+          <p class="text-lg text-white">🏆 SEMIFINAL</p>
+          <p class="text-lg text-white">📌 UCSI 🆚 Agro UNP</p>
         </div>
         <div class="bg-blue-500 p-4 rounded-lg shadow-lg transition-transform transform hover:scale-105">
-            <h3 class="text-xl font-bold text-white">VOLLEY FEM</h3>
-            <p class="text-lg text-white">UCSI vs UNAMIS</p>
-            <p class="text-xs text-white">24 de Junio</p>
-			<p class="text-xs text-white">4to PARTIDO</p>
+          <h3 class="text-xl font-bold text-white">FUTSAL FEMENINO</h3>
+          <p class="text-lg text-white">🏆 FINAL</p>
+          <p class="text-lg text-white">📌 UCSI 🆚 ____</p>
+        </div>
+      </div>
 
-        </div>
-        <div class="bg-blue-500 p-4 rounded-lg shadow-lg transition-transform transform hover:scale-105">
-            <h3 class="text-xl font-bold text-white">HANDBALL FEM</h3>
-            <p class="text-lg text-white">UCSI vs FILOSOFIA UNA</p>
-            <p class="text-xs text-white">Polideportivo Municipal</p>
-			<p class="text-xs text-white">3er PARTIDO</p>
-        </div>
-        <div class="bg-blue-500 p-4 rounded-lg shadow-lg transition-transform transform hover:scale-105">
-            <h3 class="text-xl font-bold text-white">HANDBALL MASC</h3>
-            <p class="text-lg text-white">UCSI vs AGRO UNP</p>
-            <p class="text-xs text-white">Polideportivo Municipal</p>
-			<p class="text-xs text-white">4to Partido</p>
+      <h2 class="text-3xl font-semibold text-primary mt-8 text-center">Posibles Finales</h2>
 
-        </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+        <!-- Handball Final -->
         <div class="bg-blue-500 p-4 rounded-lg shadow-lg transition-transform transform hover:scale-105">
-            <h3 class="text-xl font-bold text-white">FUTSAL FEM</h3>
-            <p class="text-lg text-white">UCSI vs UNAMIS</p>
-            <p class="text-xs text-white">Polideportivo Municipal</p>
-			<p class="text-xs text-white">3er Partido</p>
+          <h3 class="text-xl font-bold text-white">HANDBALL MASCULINO</h3>
+          <p class="text-lg text-white">🏆 FINAL (Si gana la semifinal)</p>
+          <p class="text-lg text-white">📌 Ganador Partido 3 🆚 UCSI</p>
         </div>
+        <!-- Futsal Final -->
         <div class="bg-blue-500 p-4 rounded-lg shadow-lg transition-transform transform hover:scale-105">
-            <h3 class="text-xl font-bold text-white">FUTSAL MASC</h3>
-            <p class="text-lg text-white">UCSI vs UHG</p>
-            <p class="text-xs text-white">Polideportivo Municipal</p>
-			<p class="text-xs text-white">6to Partido</p>
+          <h3 class="text-xl font-bold text-white">FUTSAL FEMENINO</h3>
+          <p class="text-lg text-white">🏆 FINAL</p>
+          <p class="text-lg text-white">📌 UCSI 🆚 ____</p>
         </div>
-    </div>
-    <div class="flex justify-center mt-6 space-x-4">
+      </div>
+
+      <div class="flex justify-center mt-6 space-x-4">
         <a href="https://www.instagram.com/ceucsi" class="text-muted-foreground hover:text-muted-foreground/80">Instagram</a>
+      </div>
     </div>
-</div>
-
   </body>
-</html>
 </html>
